@@ -7,21 +7,33 @@
     android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:text="@string/notes"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/manrope_bold"
+        android:textColor="@color/ColorWhite"/>
 
     <SearchView
-        android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
+        android:searchIcon="@drawable/ic_search"
         android:background="@drawable/background"
-        android:iconifiedByDefault="false"
         android:queryHint="@string/search"
-        android:searchIcon="@drawable/search"
         android:theme="@style/ThemeOverlay.search"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:iconifiedByDefault="false"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/search_view"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -47,7 +59,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/tick"
+            android:src="@drawable/ic_tick"
             app:tint="@color/ColorWhite" />
 
         <ImageView
@@ -55,9 +67,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            android:src="@drawable/image"
+            android:src="@drawable/ic_image"
             app:tint="@color/ColorWhite" />
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_link"
+            app:tint="@color/ColorWhite" />
 
 
     </LinearLayout>
@@ -72,7 +89,7 @@
         android:layout_marginBottom="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/add"/>
+        android:src="@drawable/ic_add"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

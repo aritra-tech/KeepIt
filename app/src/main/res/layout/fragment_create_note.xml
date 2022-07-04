@@ -14,7 +14,7 @@
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:src="@drawable/back"
+        android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/ColorWhite" />
@@ -26,7 +26,7 @@
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:src="@drawable/tick"
+        android:src="@drawable/ic_tick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/ColorWhite" />
@@ -132,7 +132,7 @@
             android:layout_alignParentEnd="true"
             android:visibility="gone"
             android:layout_alignParentTop="true"
-            android:src="@drawable/cancel" />
+            android:src="@drawable/ic_delete" />
 
 
     </RelativeLayout>
@@ -149,6 +149,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutImage"
         android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/etWebLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/manrope_regular"
+            android:hint="@string/web_url"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_10sdp"
+            android:text="http://"
+            android:textColor="@color/ColorWhite"
+            android:textColorHint="@color/ColorGray"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/imgUrlDelete"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:visibility="visible" />
+    </LinearLayout>
 
 
 
@@ -237,7 +265,7 @@
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:layout_gravity="center"
-            android:src="@drawable/arrow_up" />
+            android:src="@drawable/img_bar" />
     </FrameLayout>
 
 

@@ -41,6 +41,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="@font/manrope_bold"
                 android:textColor="@color/ColorWhite"/>
 
             <TextView
@@ -51,6 +52,7 @@
                 android:layout_marginBottom="@dimen/_5sdp"
                 android:ellipsize="end"
                 android:visibility="gone"
+                android:fontFamily="@font/manrope_bold"
                 android:padding="@dimen/_10sdp"
                 android:textColor="@color/ColorGray"
                 android:textColorHint="@color/ColorGray"
@@ -70,7 +72,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:fontFamily="@font/manrope_regular"
-                android:textColor="@color/ColorWhite"/>
+                android:textColor="@color/ColorText"/>
 
             <TextView
                 android:id="@+id/tvDateTime"
@@ -85,7 +87,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:fontFamily="@font/manrope_regular"
-                android:textColor="@color/ColorWhite"/>
+                android:textColor="@color/ColorText"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
