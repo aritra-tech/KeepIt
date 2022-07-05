@@ -37,7 +37,6 @@ class NotesAdapter() :
 
         holder.itemView.tvTitle.text = arrList[position].title
         holder.itemView.tvDesc.text = arrList[position].noteText
-        holder.itemView.tvDateTime.text = arrList[position].dateTime
 
         if (arrList[position].color != null){
             holder.itemView.cardView.setCardBackgroundColor(Color.parseColor(arrList[position].color))

@@ -45,8 +45,8 @@
         android:maxLines="1"
         android:padding="@dimen/_10sdp"
         android:textColor="@color/ColorWhite"
-        android:textColorHint="@color/ColorGray"
-        android:textSize="@dimen/_14ssp"
+        android:textColorHint="@color/ColorWhite"
+        android:textSize="@dimen/_16ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgBack" />
@@ -56,20 +56,18 @@
         android:id="@+id/tvDateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginTop="510dp"
         android:ellipsize="end"
         android:fontFamily="@font/manrope_bold"
         android:maxLines="1"
-        android:paddingStart="@dimen/_10sdp"
+        android:gravity="center"
         android:textColor="@color/ColorGray"
         android:textColorHint="@color/ColorGray"
-        android:textSize="@dimen/_8ssp"
+        android:textSize="@dimen/_10ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNoteTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/etNoteDesc"
+        />
 
     <LinearLayout
         android:id="@+id/l1"
@@ -79,7 +77,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDateTime">
+        app:layout_constraintTop_toBottomOf="@id/etNoteTitle">
 
 
         <View
@@ -101,7 +99,7 @@
             android:maxLines="1"
             android:padding="@dimen/_10sdp"
             android:textColor="@color/ColorWhite"
-            android:textColorHint="@color/ColorGray"
+            android:textColorHint="@color/ColorWhite"
             android:textSize="@dimen/_10ssp" />
     </LinearLayout>
 
@@ -247,7 +245,7 @@
         android:inputType="textMultiLine"
         android:padding="@dimen/_10sdp"
         android:textColor="@color/ColorWhite"
-        android:textColorHint="@color/ColorGray"
+        android:textColorHint="@color/ColorWhite"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -265,7 +263,7 @@
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:layout_gravity="center"
-            android:src="@drawable/img_bar" />
+            android:src="@drawable/arrow_up" />
     </FrameLayout>
 
 

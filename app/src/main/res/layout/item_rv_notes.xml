@@ -36,8 +36,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_15ssp"
                 android:text="@string/notes"
-                android:paddingStart="@dimen/_10sdp"
-                android:paddingTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingTop="@dimen/_13sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -65,29 +66,16 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_11ssp"
                 android:text="@string/notes"
-                android:paddingStart="@dimen/_10sdp"
-                android:paddingTop="@dimen/_5sdp"
-                android:paddingBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_15sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_6sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:fontFamily="@font/manrope_regular"
-                android:textColor="@color/ColorText"/>
+                android:textColor="@color/ColorWhite"/>
 
-            <TextView
-                android:id="@+id/tvDateTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/_9ssp"
-                android:text="@string/notes"
-                android:paddingStart="@dimen/_10sdp"
-                android:paddingTop="@dimen/_2sdp"
-                android:paddingBottom="@dimen/_5sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:fontFamily="@font/manrope_regular"
-                android:textColor="@color/ColorText"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">KeepIt</string>
     <string name="notes">My Notes</string>
-    <string name="notes_title">Notes Title</string>
+    <string name="notes_title">Title</string>
     <string name="notes_sub_title">Notes Sub Title</string>
-    <string name="notes_desc">Enter Note Here</string>
+    <string name="notes_desc">Note</string>
     <string name="web_url">Enter Web Url</string>
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
