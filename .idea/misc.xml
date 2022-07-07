@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/KeepIt/app/src/main/res/drawable/background.xml" value="0.3675" />
+        <entry key="..\:/KeepIt/app/src/main/res/drawable/nivagation_bar_background.xml" value="0.294" />
         <entry key="..\:/KeepIt/app/src/main/res/drawable/note_color_7.xml" value="0.3675" />
+        <entry key="..\:/KeepIt/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/KeepIt/app/src/main/res/layout/fragment_create_note.xml" value="0.36666666666666664" />
-        <entry key="..\:/KeepIt/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/KeepIt/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/KeepIt/app/src/main/res/layout/fragment_notes_bottom_sheet.xml" value="0.36666666666666664" />
         <entry key="..\:/KeepIt/app/src/main/res/layout/item_rv_notes.xml" value="0.33" />
+        <entry key="..\:/KeepIt/app/src/main/res/menu/navigation_menu.xml" value="0.20277777777777778" />
         <entry key="..\:/NotesApp/app/src/main/res/drawable/background.xml" value="0.1" />
         <entry key="..\:/NotesApp/app/src/main/res/drawable/ic_search.xml" value="0.1" />
         <entry key="..\:/NotesApp/app/src/main/res/drawable/note_color_1.xml" value="0.143" />
