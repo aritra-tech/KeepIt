@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.SearchView
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.geekymuskeeters.keepit.adapter.NotesAdapter
 import com.geekymuskeeters.keepit.database.NotesDatabase
 import com.geekymuskeeters.keepit.entities.Notes
+
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.coroutines.launch
 import java.util.*
@@ -17,13 +19,16 @@ import kotlin.collections.ArrayList
 
 class HomeFragment : BaseFragment() {
 
+
     var arrNotes = ArrayList<Notes>()
     var notesAdapter: NotesAdapter = NotesAdapter()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
         }
+
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -110,7 +115,7 @@ class HomeFragment : BaseFragment() {
 
 
     fun replaceFragment(fragment:Fragment, istransition:Boolean){
-        val fragmentTransition = activity!!.supportFragmentManager.beginTransaction()
+        val fragmentTransition = requireActivity().supportFragmentManager.beginTransaction()
 
         if (istransition){
             fragmentTransition.setCustomAnimations(android.R.anim.slide_out_right,android.R.anim.slide_in_left)
