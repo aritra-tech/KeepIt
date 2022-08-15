@@ -200,10 +200,6 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
         if (etNoteTitle.text.isNullOrEmpty()){
             Toast.makeText(context,"Note Title is Required",Toast.LENGTH_SHORT).show()
         }
-        else if (etNoteSubTitle.text.isNullOrEmpty()){
-
-            Toast.makeText(context,"Note Sub Title is Required",Toast.LENGTH_SHORT).show()
-        }
 
         else if (etNoteDesc.text.isNullOrEmpty()){
 

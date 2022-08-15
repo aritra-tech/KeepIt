@@ -224,7 +224,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/brush"
+            android:src="@drawable/mic"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             app:tint="@color/ColorWhite" />
@@ -237,7 +237,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:textColor="@color/ColorWhite"
             android:textSize="@dimen/_12ssp"
-            android:text="Drawing"
+            android:text="Recording"
             android:fontFamily="@font/manrope_bold"
             android:maxLines="1"
             android:ellipsize="end"
@@ -252,39 +252,38 @@
         android:id="@+id/layoutDeleteNote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:visibility="gone"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_10sdp"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_delete"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_delete"
             app:tint="@color/ColorWhite" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/etNoteTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textColor="@color/ColorWhite"
-            android:textSize="@dimen/_12ssp"
-            android:text="Delete Note"
+            android:ellipsize="end"
             android:fontFamily="@font/manrope_bold"
             android:maxLines="1"
-            android:ellipsize="end"
-            />
+            android:text="Delete Note"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNoteTitle" />
 
     </LinearLayout>
 
