@@ -12,4 +12,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="add_note">Add note</string>
+    <string name="title_is_really_unknown">Title is really unknown</string>
+    <string name="title_unknown">Title is really unknown</string>
+    <string name="let_s_go">Let\'s go</string>
 </resources>

@@ -19,4 +19,7 @@
     <color name="ColorGreenNote">#0aebaf</color>
     <color name="ColorOrangeNote">#ff7746</color>
     <color name="ColorBlackNote">#202734</color>
+
+    <color name="colorSlideAct">#ef5059</color>
+    <color name="colorSlideInAct">#F47980</color>
 </resources>
