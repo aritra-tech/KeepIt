@@ -32,6 +32,18 @@
         app:tint="@color/ColorWhite" />
 
 
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/share"
+        app:layout_constraintEnd_toStartOf="@+id/imgDone"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/imgBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/ColorWhite" />
+
     <EditText
         android:id="@+id/etNoteTitle"
         android:layout_width="match_parent"

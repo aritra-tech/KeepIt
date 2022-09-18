@@ -119,7 +119,17 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
                 saveNote()
             }
         }
+        share.setOnClickListener {
 
+            val message: String = etNoteDesc.text.toString()
+            val title : String = etNoteTitle.text.toString()
+            val myIntent= Intent(Intent.ACTION_SEND)
+            myIntent.type = "text/plane"
+            myIntent.putExtra(Intent.EXTRA_TEXT,message)
+            myIntent.putExtra(Intent.EXTRA_TEXT,title)
+            context?.startActivity(myIntent)
+
+        }
         imgBack.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }
