@@ -10,7 +10,7 @@
     app:behavior_peekHeight="40dp"
     app:layout_behavior="@string/bottom_sheet_behavior"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".intro.MainActivity">
 
 
 

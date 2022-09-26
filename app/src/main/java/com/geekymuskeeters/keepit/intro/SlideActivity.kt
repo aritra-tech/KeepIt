@@ -1,4 +1,4 @@
-package com.geekymuskeeters.keepit
+package com.geekymuskeeters.keepit.intro
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.viewpager2.widget.ViewPager2
+import com.geekymuskeeters.keepit.R
 import com.geekymuskeeters.keepit.adapter.SlideAdapter
 import com.geekymuskeeters.keepit.databinding.ActivitySlideBinding
 import com.geekymuskeeters.keepit.entities.SlideModel
@@ -38,7 +39,7 @@ class SlideActivity : AppCompatActivity() {
         slideBinding.slidePager.adapter = adapter
 
         slideBinding.indicatorView
-            .setSliderColor(R.color.colorSlideInAct,R.color.colorSlideAct)
+            .setSliderColor(R.color.colorSlideInAct, R.color.colorSlideAct)
             .setSliderWidth(resources.getDimension(R.dimen._8sdp))
             .setSliderHeight(resources.getDimension(R.dimen._8sdp))
             .setSlideMode(IndicatorSlideMode.WORM)
@@ -70,7 +71,7 @@ class SlideActivity : AppCompatActivity() {
                     slideBinding.btnNext.visibility = View.VISIBLE
 
                     slideBinding.btnNext.setOnClickListener {
-                        Intent(this@SlideActivity,MainActivity::class.java).also {
+                        Intent(this@SlideActivity, MainActivity::class.java).also {
                             it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
                             startActivity(it)
                             finish()

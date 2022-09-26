@@ -1,4 +1,4 @@
-package com.geekymuskeeters.keepit
+package com.geekymuskeeters.keepit.fragments
 
 import android.Manifest
 import android.app.Activity.RESULT_OK
@@ -17,6 +17,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.geekymuskeeters.keepit.R
 import com.geekymuskeeters.keepit.database.NotesDatabase
 import com.geekymuskeeters.keepit.entities.Notes
 import com.geekymuskeeters.keepit.util.NoteBottomSheetFragment
