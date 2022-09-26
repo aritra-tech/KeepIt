@@ -24,12 +24,13 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="130dp"
+        android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/button_slide_background"
         android:text="@string/let_s_go"
+        android:fontFamily="@font/dm_sans"
         android:gravity="center"
         android:textAllCaps="false"
         android:textColor="@color/ColorWhite"

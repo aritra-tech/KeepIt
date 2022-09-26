@@ -160,7 +160,7 @@
             android:textColor="@color/ColorWhite"
             android:textSize="@dimen/_12ssp"
             android:text="Pick Color"
-            android:fontFamily="@font/manrope_bold"
+            android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
             android:ellipsize="end"
             />
@@ -196,7 +196,7 @@
             android:textColor="@color/ColorWhite"
             android:textSize="@dimen/_12ssp"
             android:text="Add Image"
-            android:fontFamily="@font/manrope_bold"
+            android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
             android:ellipsize="end"
             />
@@ -238,7 +238,7 @@
             android:textColor="@color/ColorWhite"
             android:textSize="@dimen/_12ssp"
             android:text="Recording"
-            android:fontFamily="@font/manrope_bold"
+            android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
             android:ellipsize="end"
             />
@@ -276,7 +276,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:fontFamily="@font/manrope_bold"
+            android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
             android:text="Delete Note"
             android:textColor="@color/ColorWhite"

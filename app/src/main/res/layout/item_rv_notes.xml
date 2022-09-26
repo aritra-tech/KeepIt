@@ -42,7 +42,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:fontFamily="@font/manrope_bold"
+                android:fontFamily="@font/dm_sans_medium"
                 android:textColor="@color/ColorWhite"/>
 
             <TextView
@@ -73,7 +73,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:fontFamily="@font/manrope_regular"
+                android:fontFamily="@font/dm_sans"
                 android:textColor="@color/ColorWhite"/>
 
 

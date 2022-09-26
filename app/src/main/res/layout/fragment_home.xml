@@ -14,7 +14,7 @@
         <SearchView
             android:id="@+id/search_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_margin="@dimen/_15sdp"
             android:layout_marginTop="40dp"
             android:background="@drawable/background"
@@ -39,8 +39,8 @@
             android:id="@+id/fabBtnCreateNote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="120dp"
             android:background="@color/colorAccent"
             android:src="@drawable/ic_outline_edit_24"
             android:tint="@color/ColorWhite"
@@ -48,10 +48,6 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
