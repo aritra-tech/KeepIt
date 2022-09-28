@@ -1,3 +1,6 @@
+![banner_keepit](https://user-images.githubusercontent.com/80090908/192719856-94b8fcc8-8fdc-4380-bcc0-c79a1af5b138.png)
+
+
 # 📔 KeepIt
 KeepIt s a note taking Android application 📱 built using Kotlin and also to demonstrate use of Modern Android development tools.
 
