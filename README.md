@@ -6,7 +6,7 @@ KeepIt s a note taking Android application 📱 built using Kotlin and also to d
 
 ## Application Install
 
-***You can Install and test latest Medify app from below 👇***
+***You can Install and test latest KeepIt app from below 👇***
 
 [![KeepIt](https://img.shields.io/badge/KeepIt✅-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/aritra-tech/KeepIt/releases/tag/1.0.0)
 
