@@ -1,9 +1,12 @@
+![bnner_keepit](https://user-images.githubusercontent.com/80090908/192720350-69d9c212-72f3-47dc-97d8-74bff9610f19.png)
+
+
 # 📔 KeepIt
 KeepIt s a note taking Android application 📱 built using Kotlin and also to demonstrate use of Modern Android development tools.
 
 ## Application Install
 
-***You can Install and test latest Medify app from below 👇***
+***You can Install and test latest KeepIt app from below 👇***
 
 [![KeepIt](https://img.shields.io/badge/KeepIt✅-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/aritra-tech/KeepIt/releases/tag/1.0.0)
 
@@ -32,16 +35,5 @@ KeepIt s a note taking Android application 📱 built using Kotlin and also to d
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![ForTheBadge ANDROID](https://forthebadge.com/images/badges/built-for-android.svg)
 
-## Connect - Let's become friends:
-<div align="center">
-<a href="https://github.com/aritra-tech" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://twitter.com/aritratech" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.linkedin.com/in/aritra-das-/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-</div> 
+
 <h2 align="center">Made with ❤ by Aritra Das</h2>			
