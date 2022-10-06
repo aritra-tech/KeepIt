@@ -31,8 +31,8 @@ class SlideActivity : AppCompatActivity() {
 
         var slideList = mutableListOf(
             SlideModel(R.drawable.slideone,"Organise your thoughts","Built specifically for you at your comfort"),
-            SlideModel(R.drawable.slidetwo,"Beautiful user interface and experience","Knote cares about design and simplicity"),
-            SlideModel(R.drawable.slidethree,"Take notes with ease","Note taking has never been better, Knote makes it easy")
+            SlideModel(R.drawable.slidetwo,"Beautiful user interface and experience","KeepIt cares about design and simplicity"),
+            SlideModel(R.drawable.slidethree,"Take notes with ease","Note taking has never been better, KeepIt makes it easy")
         )
 
         val adapter = SlideAdapter(slideList)
