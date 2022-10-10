@@ -16,6 +16,8 @@ KeepIt s a note taking Android application 📱 built using Kotlin and also to d
 
 ✅ Add images with the notes.
 
+✅ Share your Notes with friends.
+
 ✅ Serch your notes that you want.
 
 ✅ Beautiful UI design.
@@ -33,6 +35,8 @@ This app uses [MVVM (Model View View-Model)](https://developer.android.com/topic
 
 ![68747470733a2f2f646576656c6f7065722e616e64726f69642e636f6d2f746f7069632f6c69627261726965732f6172636869746563747572652f696d616765732f66696e616c2d6172636869746563747572652e706e67](https://user-images.githubusercontent.com/80090908/194612432-65ddf3e4-9322-4f05-9a93-39c83d5f81a2.png)
 
+## 📕 Contributors
+<a href="https://github.com/aritra-tech/KeepIt/graphs/contributors">
 
 ## If you liked the project don't forget to star 🌟 and fork 🍽 the project.
 
