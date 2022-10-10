@@ -37,6 +37,7 @@ This app uses [MVVM (Model View View-Model)](https://developer.android.com/topic
 
 ## 📕 Contributors
 <a href="https://github.com/aritra-tech/KeepIt/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=aritra-tech/KeepIt" />
 
 ## If you liked the project don't forget to star 🌟 and fork 🍽 the project.
 
