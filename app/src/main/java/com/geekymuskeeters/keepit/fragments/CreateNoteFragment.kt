@@ -124,10 +124,10 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
 
             val message: String = etNoteDesc.text.toString()
             val title : String = etNoteTitle.text.toString()
+            val shareNote = "${title}\n${message} "
             val myIntent= Intent(Intent.ACTION_SEND)
             myIntent.type = "text/plane"
-            myIntent.putExtra(Intent.EXTRA_TEXT,message)
-            myIntent.putExtra(Intent.EXTRA_TEXT,title)
+            myIntent.putExtra(Intent.EXTRA_TEXT,shareNote)
             context?.startActivity(myIntent)
 
         }
