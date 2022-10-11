@@ -159,7 +159,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:textColor="@color/ColorWhite"
             android:textSize="@dimen/_12ssp"
-            android:text="Pick Color"
+            android:text="Pick Colors"
             android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
             android:ellipsize="end"
