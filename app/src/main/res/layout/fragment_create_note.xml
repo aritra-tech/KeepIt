@@ -275,7 +275,7 @@
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:layout_gravity="center"
-            android:src="@drawable/arrow_up" />
+            android:src="@drawable/horizontal_rule" />
     </FrameLayout>
 
 
