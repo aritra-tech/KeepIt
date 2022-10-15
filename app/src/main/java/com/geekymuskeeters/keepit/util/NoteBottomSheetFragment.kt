@@ -1,20 +1,37 @@
 package com.geekymuskeeters.keepit.util
 
+import android.Manifest
 import android.app.Dialog
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.media.MediaRecorder
 import android.os.Bundle
+import android.os.SystemClock
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.app.ActivityCompat
+import androidx.core.app.ActivityCompat.OnRequestPermissionsResultCallback
+import androidx.core.content.ContextCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.geekymuskeeters.keepit.R
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.fragment_notes_bottom_sheet.*
+import java.io.IOException
+import java.text.SimpleDateFormat
+import java.util.*
 
-class NoteBottomSheetFragment : BottomSheetDialogFragment() {
+class NoteBottomSheetFragment : BottomSheetDialogFragment(), OnRequestPermissionsResultCallback {
     var selectedColor = "#171C26"
+    private var  mediaRecorder: MediaRecorder? = null
+    var isRecording = false
+    private val recordPath by lazy { requireContext().getExternalFilesDir("/")?.absolutePath.toString() }
+    private var formatter = SimpleDateFormat("yyyy_MM_dd_hh_mm_ss", Locale.getDefault())
 
 
     companion object {
@@ -202,10 +219,78 @@ class NoteBottomSheetFragment : BottomSheetDialogFragment() {
             dismiss()
         }
 
+        val requestPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()){
+            if (it){
+                Toast.makeText(requireContext(),"Permission Granted",Toast.LENGTH_SHORT).show()
+                startRecording()
+            }else{
+                Toast.makeText(requireContext(),"Permission Denied",Toast.LENGTH_SHORT).show()
+            }
+        }
+        val listener = View.OnClickListener {
+            if (isRecording){
+                stopRecording()
+            }else{
+                if (checkPermission()){
+                    startRecording()
+                }else{
+                    requestPermission.launch(Manifest.permission.RECORD_AUDIO)
+                }
+            }
+        }
+        layoutDrawing.setOnClickListener(listener)
+        recordButton.setOnClickListener(listener)
+    }
 
+    private fun startRecording() {
+        val date = Date()
+        val fname = "Recording_${formatter.format(date)}.mp3"
+        mediaRecorder = MediaRecorder()
+        mediaRecorder!!.setAudioSource(MediaRecorder.AudioSource.MIC)
+        mediaRecorder!!.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP)
+        mediaRecorder!!.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB)
+        mediaRecorder!!.setOutputFile("$recordPath/$fname")
+
+        recordButton.setImageDrawable(
+            ContextCompat.getDrawable(
+                requireContext(),
+                R.drawable.stop_recording
+            )
+        )
+        isRecording = true
+        chronometer.visibility = View.VISIBLE
+        try {
+            mediaRecorder!!.prepare()
+            chronometer.base = SystemClock.elapsedRealtime()
+            chronometer.start()
+            mediaRecorder!!.start()
+        } catch (e: IOException) {
+            Log.e("TAG", "${e.message} prepare() failed")
+            stopRecording()
+        }
 
 
     }
+
+    private fun stopRecording() {
+        recordButton.setImageDrawable(
+            ContextCompat.getDrawable(
+                requireContext(),
+                R.drawable.mic
+            )
+        )
+        isRecording = false
+        mediaRecorder?.stop()
+        mediaRecorder?.release()
+        mediaRecorder = null
+        chronometer.stop()
+        chronometer.visibility = View.INVISIBLE
+    }
+
+    private fun checkPermission(): Boolean {
+        return ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED
+    }
+
 
 
 }

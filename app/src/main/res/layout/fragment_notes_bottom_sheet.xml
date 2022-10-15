@@ -209,39 +209,51 @@
         android:id="@+id/layoutDrawing"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/_12sdp"
         android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginBottom="@dimen/_20sdp"
-        android:orientation="horizontal">
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:weightSum="1">
 
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/recordButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mic"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_10sdp"
-            app:tint="@color/ColorWhite" />
+            android:src="@drawable/mic"
+            android:background="@color/colorPrimary"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/etNoteTitle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:textColor="@color/ColorWhite"
-            android:textSize="@dimen/_12ssp"
-            android:text="Recording"
+            android:ellipsize="end"
             android:fontFamily="@font/dm_sans_bold"
             android:maxLines="1"
-            android:ellipsize="end"
-            />
+            android:text="Recording"
+            android:textColor="@color/ColorWhite"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etNoteTitle"
+            android:layout_weight="1"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/ColorWhite"
+            android:visibility="invisible"
+            android:layout_gravity="end"/>
+
 
 
 
