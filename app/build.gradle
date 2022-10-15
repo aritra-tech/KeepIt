@@ -71,4 +71,7 @@ dependencies {
 
     implementation 'com.github.zhpanvip:viewpagerindicator:1.0.4'
 
+    //Chronometer Library
+    implementation 'com.github.gbzarelli:chronometer-library:2.0.0'
+
 }
