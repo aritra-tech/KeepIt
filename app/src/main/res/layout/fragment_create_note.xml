@@ -68,7 +68,7 @@
         android:id="@+id/tvDateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="4dp"
         android:ellipsize="end"
         android:fontFamily="@font/manrope_bold"
         android:maxLines="1"
@@ -78,7 +78,7 @@
         android:textSize="@dimen/_10ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNoteDesc"
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollview"
         />
 
     <LinearLayout
@@ -246,24 +246,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutWebUrl" />
 
-    <EditText
-        android:id="@+id/etNoteDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_10sdp"
-        android:background="@null"
-        android:fontFamily="@font/dm_sans_medium"
-        android:hint="@string/notes_desc"
-        android:inputType="textMultiLine"
-        android:padding="@dimen/_10sdp"
-        android:textColor="@color/ColorWhite"
-        android:textColorHint="@color/ColorWhite"
-        android:textSize="@dimen/_12ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvWebLink" />
+   <androidx.core.widget.NestedScrollView
+       android:id="@+id/nestedScrollview"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/tvWebLink"
+       app:layout_constraintBottom_toTopOf="@+id/bottomView"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+
+       <EditText
+           android:id="@+id/etNoteDesc"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="@dimen/_10sdp"
+           android:background="@null"
+           android:fontFamily="@font/dm_sans_medium"
+           android:hint="@string/notes_desc"
+           android:inputType="textMultiLine"
+           android:isScrollContainer="true"
+           android:padding="@dimen/_10sdp"
+           android:textColor="@color/ColorWhite"
+           android:textColorHint="@color/ColorWhite"
+           android:textSize="@dimen/_12ssp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/tvWebLink"
+           />
+
+   </androidx.core.widget.NestedScrollView>
 
     <FrameLayout
+        android:id="@+id/bottomView"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         app:layout_constraintBottom_toBottomOf="parent"
