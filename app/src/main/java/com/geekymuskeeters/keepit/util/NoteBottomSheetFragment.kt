@@ -205,6 +205,57 @@ class NoteBottomSheetFragment : BottomSheetDialogFragment(), OnRequestPermission
             LocalBroadcastManager.getInstance(requireContext()).sendBroadcast(intent)
         }
 
+        fNote8.setOnClickListener {
+            imgNote1.setImageResource(0)
+            imgNote2.setImageResource(0)
+            imgNote4.setImageResource(0)
+            imgNote5.setImageResource(0)
+            imgNote6.setImageResource(0)
+            imgNote7.setImageResource(0)
+            imgNote8.setImageResource(R.drawable.ic_tick)
+            selectedColor = "#aa00ff"
+
+            val intent = Intent("bottom_sheet_action")
+            intent.putExtra("action","Deep_Purple")
+            intent.putExtra("selectedColor",selectedColor)
+            LocalBroadcastManager.getInstance(requireContext()).sendBroadcast(intent)
+        }
+
+        fNote9.setOnClickListener {
+            imgNote1.setImageResource(0)
+            imgNote2.setImageResource(0)
+            imgNote4.setImageResource(0)
+            imgNote5.setImageResource(0)
+            imgNote6.setImageResource(0)
+            imgNote7.setImageResource(0)
+            imgNote8.setImageResource(0)
+            imgNote9.setImageResource(R.drawable.ic_tick)
+            selectedColor = "#d50000"
+
+            val intent = Intent("bottom_sheet_action")
+            intent.putExtra("action","Red")
+            intent.putExtra("selectedColor",selectedColor)
+            LocalBroadcastManager.getInstance(requireContext()).sendBroadcast(intent)
+        }
+
+        fNote10.setOnClickListener {
+            imgNote1.setImageResource(0)
+            imgNote2.setImageResource(0)
+            imgNote4.setImageResource(0)
+            imgNote5.setImageResource(0)
+            imgNote6.setImageResource(0)
+            imgNote7.setImageResource(0)
+            imgNote8.setImageResource(0)
+            imgNote9.setImageResource(0)
+            imgNote10.setImageResource(R.drawable.ic_tick)
+            selectedColor = "#00e5ff"
+
+            val intent = Intent("bottom_sheet_action")
+            intent.putExtra("action","Light_Blue")
+            intent.putExtra("selectedColor",selectedColor)
+            LocalBroadcastManager.getInstance(requireContext()).sendBroadcast(intent)
+        }
+
         layoutImage.setOnClickListener{
             val intent = Intent("bottom_sheet_action")
             intent.putExtra("action","Image")

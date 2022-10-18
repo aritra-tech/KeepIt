@@ -313,6 +313,24 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
 
                 }
 
+                "Deep_Purple" -> {
+                    selectedColor = p1.getStringExtra("selectedColor")!!
+                    colorView.setBackgroundColor(Color.parseColor(selectedColor))
+
+                }
+
+                "Red" -> {
+                    selectedColor = p1.getStringExtra("selectedColor")!!
+                    colorView.setBackgroundColor(Color.parseColor(selectedColor))
+
+                }
+
+                "Light_Blue" -> {
+                    selectedColor = p1.getStringExtra("selectedColor")!!
+                    colorView.setBackgroundColor(Color.parseColor(selectedColor))
+
+                }
+
                 "Image" ->{
                     readStorageTask()
                     layoutWebUrl.visibility = View.GONE
