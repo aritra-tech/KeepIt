@@ -10,6 +10,8 @@ KeepIt s a note taking Android application 📱 built using Kotlin and also to d
 
 [![KeepIt](https://img.shields.io/badge/KeepIt✅-APK-red.svg?style=for-the-badge&logo=android)](https://github.com/aritra-tech/KeepIt/releases/tag/1.0.0)
 
+[Want to try the app](https://appetize.io/app/oa5wpajurmeyvg646pbkz3vogm?device=pixel4&osVersion=11.0&scale=75)
+
 # 🔥 Features
 
 ✅ You can jot down your ideas and notes.
